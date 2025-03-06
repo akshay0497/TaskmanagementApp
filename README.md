@@ -61,10 +61,10 @@ npx react-native run-ios
 
 ### Screenshots
 ```
-![Task Management App](Assets/AddTaskScreen.jpeg)
-![Task Management App](Assets/AllTaskScreen.jpeg)
-![Task Management App](Assets/Searchfeatures.jpeg)
-![Task Management App](Assets/taskComplete.jpeg)
+![Task Management App](src/Assets/AddTaskScreen.jpeg)
+![Task Management App](src/Assets/AllTaskScreen.jpeg)
+![Task Management App](src/Assets/Searchfeatures.jpeg)
+![Task Management App](src/Assets/taskComplete.jpeg)
 ```
 
 ## Project Structure
