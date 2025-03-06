@@ -59,6 +59,11 @@ Ensure Xcode is set up correctly, then run:
 npx react-native run-ios
 ```
 
+### Screenshots
+```
+![Task Management App](assets/screenshot.png)
+```
+
 ## Project Structure
 ```
 akshay0497-taskmanagementapp/
