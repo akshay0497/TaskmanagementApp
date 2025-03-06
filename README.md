@@ -1,169 +1,92 @@
----
 
-# Grocery App
-
-This is a grocery shopping application built using React Native. The app allows users to view, create, and manage grocery items in an intuitive interface. This repository contains the source code for both Android and iOS platforms. 
-
-## Table of Contents
-
-- [Overview](#overview)
-- [Features](#features)
-- [Technologies Used](#technologies-used)
-- [Installation](#installation)
-  - [Prerequisites](#prerequisites)
-  - [Clone the repository](#clone-the-repository)
-  - [Install Dependencies](#install-dependencies)
-  - [Run the App](#run-the-app)
-- [Directory Structure](#directory-structure)
-- [Contributing](#contributing)
-- [License](#license)
+# Task Management App
 
 ## Overview
-
-The Grocery App provides users with a seamless experience in managing grocery items. It has the following functionalities:
-
-- **View All Items**: A screen to view all grocery items available in the app.
-- **Create New Item**: A screen to create new grocery items and add them to the list.
-- **Home Screen**: The main landing screen providing navigation to other screens.
-
-The app is built using modern tools and frameworks like React Native, TypeScript, and Jest for testing.
+Task Management App is a React Native application designed to help users efficiently manage their tasks. The app supports adding, listing, and organizing tasks, ensuring a smooth task management experience.
 
 ## Features
+- Add new tasks with details
+- View a list of tasks
+- Cross-platform support (Android & iOS)
+- Uses TypeScript for type safety
+- Follows modern React Native best practices
 
-- **Cross-Platform**: Available for both Android and iOS.
-- **User-Friendly Interface**: Easy to navigate with clear sections for managing grocery items.
-- **Testing**: Unit and integration tests using Jest.
-- **Customizable Styles**: Styled with the flexibility to adapt to different screen sizes and orientations.
-
-## Technologies Used
-
-- **React Native**: Framework for building the app.
-- **TypeScript**: For better type safety and development experience.
-- **Jest**: For unit testing.
-- **React Navigation**: For navigating between different screens.
-- **ESLint & Prettier**: For code linting and formatting.
-- **Gradle & CocoaPods**: For dependency management in Android and iOS.
-- **Xcode & Android Studio**: For building and running the application.
+## Tech Stack
+- **React Native**: Framework for building mobile applications
+- **TypeScript**: Statically typed JavaScript
+- **Redux (if used)**: For state management
+- **React Navigation**: For handling app navigation
+- **Jest**: For testing
 
 ## Installation
 
-To run the app locally, follow the steps below.
-
 ### Prerequisites
-
-- Node.js (version 14 or higher)
+Ensure you have the following installed:
+- Node.js
+- npm or yarn
 - React Native CLI
-- Xcode (for iOS)
-- Android Studio (for Android)
-- Watchman (macOS only)
+- Android Studio (for Android development)
+- Xcode (for iOS development)
 
-### Clone the Repository
+### Steps
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/yourusername/akshay0497-taskmanagementapp.git
+   cd akshay0497-taskmanagementapp
+   ```
+2. Install dependencies:
+   ```sh
+   npm install
+   # or
+   yarn install
+   ```
+3. Start Metro bundler:
+   ```sh
+   npm start
+   ```
 
-Clone the repository to your local machine using the following command:
+## Running the App
 
-```bash
-git clone https://github.com/your-username/akshay0497-grocery-app.git
-cd akshay0497-grocery-app
-```
-
-### Install Dependencies
-
-Run the following commands to install the required dependencies for both Android and iOS:
-
-1. **Install Node modules**:
-
-```bash
-npm install
-```
-
-2. **Install iOS dependencies** (for macOS users only):
-
-```bash
-cd ios
-pod install
-cd ..
-```
-
-### Run the App
-
-To run the app on an Android or iOS emulator or connected device, use the following commands:
-
-- **For Android**:
-
-```bash
+### Android
+Ensure an Android emulator is running or connect a physical device, then run:
+```sh
 npx react-native run-android
 ```
 
-- **For iOS** (macOS only):
-
-```bash
+### iOS
+Ensure Xcode is set up correctly, then run:
+```sh
 npx react-native run-ios
 ```
 
-## Directory Structure
-
-The directory structure is organized as follows:
-
+### Screenshots
 ```
-akshay0497-grocery-app/
-│
-├── README.md                 
-├── App.tsx                   
-├── Gemfile                   
-├── app.json                  
-├── babel.config.js           
-├── global.d.ts               
-├── index.js                  
-├── jest.config.js            
-├── metro.config.js           
-├── package.json              
-├── tsconfig.json             
-├── .eslintrc.js              
-├── .prettierrc.js            
-├── .watchmanconfig           
-│
-├── __tests__/                
-│   └── App.test.tsx          
-│
-├── android/                  
-│   ├── gradle.properties     
-│   ├── gradlew               
-│   ├── gradlew.bat           
-│   ├── app/                  
-│   │   ├── src/              
-│   │   │   ├── debug/        
-│   │   │   └── main/         
-│   │   └── res/              
-│   └── gradle/               
-│
-├── ios/                    
-│   ├── Podfile               
-│   ├── QuickTeck/            
-│   ├── QuickTeck.xcodeproj/  
-│   └── QuickTeckTests/
-│
-└── src/                      
-    ├── screens/              
-    │   ├── AllItemsScreen.jsx   
-    │   ├── CreateItemsScreen.jsx 
-    │   └── HomeScreen.jsx    
-    └── utils/                 
-        └── data.jsx           
+![Task Management App](assets/screenshot.png)
+```
+
+## Project Structure
+```
+akshay0497-taskmanagementapp/
+├── src/
+│   ├── screens/              # App screens (AddTask, TaskList)
+│   └── types/                # TypeScript type definitions
+├── android/                  # Android-specific files
+├── ios/                      # iOS-specific files
+├── __tests__/                # Unit tests
+├── App.tsx                   # Entry point of the app
+├── package.json              # Project dependencies
+└── README.md                 # Project documentation
 ```
 
 ## Contributing
-
-We welcome contributions to the Grocery App! If you would like to contribute, please follow these steps:
-
-1. Fork the repository.
-2. Create a new branch (`git checkout -b feature-branch`).
-3. Make your changes.
-4. Commit your changes (`git commit -am 'Add new feature'`).
-5. Push to the branch (`git push origin feature-branch`).
-6. Open a Pull Request.
+Contributions are welcome! To contribute:
+1. Fork the repository
+2. Create a new branch (`feature-branch`)
+3. Commit your changes
+4. Push the branch and open a pull request
 
 ## License
+This project is licensed under the MIT License.
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
+## Contact
+For any inquiries or support, please reach out to Akshay Kumar Gupta at 1997akshay04@gmail.com.
