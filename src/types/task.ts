@@ -3,5 +3,14 @@ export interface Task {
   title: string;
   description: string;
   completed: boolean;
-  createdAt: Date;
+  createdAt: string;
+  dueDate?: string;
+  reminder?: string;
+}
+
+export interface ValidationErrors {
+  title?: string;
+  description?: string;
+  dueDate?: string;
+  reminder?: string;
 }

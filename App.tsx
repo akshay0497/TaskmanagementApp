@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from '@react-navigation/stack';
-import { TaskListScreen } from './src/screens/TaskListScreen';
+import TaskListScreen  from './src/screens/TaskListScreen';
 import { AddTaskScreen } from './src/screens/AddTaskScreen';
 import { GestureHandlerRootView } from "react-native-gesture-handler";
 
