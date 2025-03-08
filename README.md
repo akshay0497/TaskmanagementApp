@@ -59,12 +59,6 @@ Ensure Xcode is set up correctly, then run:
 npx react-native run-ios
 ```
 
-### Screenshots
-![Add Task Screen](src/Assets/AddTaskScreen.jpeg)
-![All Task Screen](src/Assets/AllTaskScreen.jpeg)
-![Search Features](src/Assets/Searchfeatures.jpeg)
-![Task Complete](src/Assets/taskComplete.jpeg)
-
 
 ## Project Structure
 ```
